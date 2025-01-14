@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="FinantialTransactions"
   DTS:PackageType="5"
-  DTS:VersionBuild="36"
-  DTS:VersionGUID="{15DA65F9-017F-4010-A3E8-A32AC1A2A875}">
+  DTS:VersionBuild="87"
+  DTS:VersionGUID="{FF805E5E-54F5-4CF0-80E8-8924C15335E1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -67,6 +67,138 @@
               DTS:TextQualified="True"
               DTS:ObjectName="effective_date"
               DTS:DTSID="{89C5634D-89AC-454B-B2FB-E57D210ED6E0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Missing Supl]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{56B70647-E0C5-48DF-8080-CF3670DA3B75}"
+      DTS:ObjectName="Flat File Missing Supl">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\data\SuppliersMissing.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="transaction_id"
+              DTS:DTSID="{5ECC600C-F428-463B-980A-50F5C4F0492B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="customer_id"
+              DTS:DTSID="{9E93AB51-02D5-405F-8162-7DA985BE5EA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="supplier_name"
+              DTS:DTSID="{22053148-4154-475F-9745-77AAA8B9DC88}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="transaction_date"
+              DTS:DTSID="{05C801DC-65FB-48C6-8A4A-138932437CF5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="amount"
+              DTS:DTSID="{7B9ECE33-91D1-4172-B727-CCBAAD73BEBE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="currency"
+              DTS:DTSID="{C53CACE5-E199-46E3-B410-96E2BF2D01F5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="customer_name"
+              DTS:DTSID="{4D26C4AD-2F7B-4FB1-8785-9BFDC0546A75}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="customer_email"
+              DTS:DTSID="{3E16BA3B-5224-471B-857D-A83D5096412F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="customer_phone"
+              DTS:DTSID="{1C630B91-5894-41A5-9620-1AE7D3B1FEF7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="exchange_rate"
+              DTS:DTSID="{BC5DEA7B-A276-4606-85FD-0D14891E7673}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="amount_GBP"
+              DTS:DTSID="{7E6B57CE-37F5-491F-8FFF-D3A8E5CF9047}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="supplier_contact_name"
+              DTS:DTSID="{7EEC10B4-FC7D-4414-AF99-B23604F824D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="supplier_phone"
+              DTS:DTSID="{BC75BA87-7CEA-494E-9DA0-397665B810E6}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -146,6 +278,184 @@
           version="1">
           <components>
             <component
+              refId="Package\CustomerTransactions\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CustomerTransactions\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Conditional Split.Inputs[Conditional Split Input].Columns[supplier_contact_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="supplier_contact_name"
+                      lineageId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output].Columns[supplier_contact_name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CustomerTransactions\Conditional Split.Outputs[NullSupplier]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="NullSupplier"
+                  synchronousInputId="Package\CustomerTransactions\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[ISNULL](#{Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output].Columns[supplier_contact_name]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(supplier_contact_name)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CustomerTransactions\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\CustomerTransactions\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CustomerTransactions\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\CustomerTransactions\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CustomerTransactions\Create Amount GBP"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Create Amount GBP"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CustomerTransactions\Create Amount GBP.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Create Amount GBP.Inputs[Derived Column Input].Columns[amount]"
+                      cachedDataType="numeric"
+                      cachedName="amount"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[amount]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Create Amount GBP.Inputs[Derived Column Input].Columns[exchange_rate]"
+                      cachedDataType="r8"
+                      cachedName="exchange_rate"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[exchange_rate]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CustomerTransactions\Create Amount GBP.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\CustomerTransactions\Create Amount GBP.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Create Amount GBP.Outputs[Derived Column Output].Columns[amount_GBP]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\CustomerTransactions\Create Amount GBP.Outputs[Derived Column Output].Columns[amount_GBP]"
+                      name="amount_GBP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[amount]} * #{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[exchange_rate]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">amount * exchange_rate</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CustomerTransactions\Create Amount GBP.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\CustomerTransactions\Create Amount GBP.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Create Amount GBP.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\Create Amount GBP.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Create Amount GBP.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\Create Amount GBP.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\CustomerTransactions\Destination finantial transaction"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -222,13 +532,13 @@
                       cachedDataType="i4"
                       cachedName="transaction_id"
                       externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[transaction_id]"
-                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[transaction_id]" />
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_id]" />
                     <inputColumn
                       refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].Columns[customer_id]"
                       cachedDataType="i4"
                       cachedName="customer_id"
                       externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[customer_id]"
-                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_id]" />
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_id]" />
                     <inputColumn
                       refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].Columns[supplier_name]"
                       cachedCodepage="1252"
@@ -236,13 +546,13 @@
                       cachedLength="50"
                       cachedName="supplier_name"
                       externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[supplier_name]"
-                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[supplier_name]" />
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[supplier_name]" />
                     <inputColumn
                       refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].Columns[transaction_date]"
                       cachedDataType="dbDate"
                       cachedName="transaction_date"
                       externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[transaction_date]"
-                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[transaction_date]" />
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_date]" />
                     <inputColumn
                       refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].Columns[amount]"
                       cachedDataType="numeric"
@@ -250,7 +560,7 @@
                       cachedPrecision="10"
                       cachedScale="2"
                       externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[amount]"
-                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[amount]" />
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[amount]" />
                     <inputColumn
                       refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].Columns[currency]"
                       cachedCodepage="1252"
@@ -258,7 +568,7 @@
                       cachedLength="10"
                       cachedName="currency"
                       externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[currency]"
-                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[currency]" />
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[currency]" />
                     <inputColumn
                       refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].Columns[customer_name]"
                       cachedCodepage="1252"
@@ -266,7 +576,7 @@
                       cachedLength="50"
                       cachedName="customer_name"
                       externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[customer_name]"
-                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_name]" />
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_name]" />
                     <inputColumn
                       refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].Columns[customer_email]"
                       cachedCodepage="1252"
@@ -274,7 +584,7 @@
                       cachedLength="100"
                       cachedName="customer_email"
                       externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[Customer_email]"
-                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_email]" />
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_email]" />
                     <inputColumn
                       refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].Columns[customer_phone]"
                       cachedCodepage="1252"
@@ -282,7 +592,29 @@
                       cachedLength="20"
                       cachedName="customer_phone"
                       externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[customer_phone]"
-                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_phone]" />
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_phone]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].Columns[amount_GBP]"
+                      cachedDataType="r8"
+                      cachedName="amount_GBP"
+                      externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[amount_GBP]"
+                      lineageId="Package\CustomerTransactions\Create Amount GBP.Outputs[Derived Column Output].Columns[amount_GBP]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].Columns[supplier_contact_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="supplier_contact_name"
+                      externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[supplier_contact_name]"
+                      lineageId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output].Columns[supplier_contact_name]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].Columns[supplier_phone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="supplier_phone"
+                      externalMetadataColumnId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[supplier_phone]"
+                      lineageId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output].Columns[supplier_phone]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -334,6 +666,22 @@
                       dataType="str"
                       length="20"
                       name="customer_phone" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[amount_GBP]"
+                      dataType="r8"
+                      name="amount_GBP" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[supplier_contact_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="supplier_contact_name" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input].ExternalColumns[supplier_phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="supplier_phone" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -355,6 +703,659 @@
                       refId="Package\CustomerTransactions\Destination finantial transaction.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\CustomerTransactions\Destination finantial transaction.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CustomerTransactions\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="2057"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CustomerTransactions\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Missing Supl]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Missing Supl]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[transaction_id]"
+                      cachedDataType="i4"
+                      cachedName="transaction_id"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[transaction_id]"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_id]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[customer_id]"
+                      cachedDataType="i4"
+                      cachedName="customer_id"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[customer_id]"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_id]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[supplier_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="supplier_name"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[supplier_name]"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[supplier_name]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[transaction_date]"
+                      cachedDataType="dbDate"
+                      cachedName="transaction_date"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[transaction_date]"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_date]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[amount]"
+                      cachedDataType="numeric"
+                      cachedName="amount"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[amount]"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[amount]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[currency]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="currency"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[currency]"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[currency]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[customer_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="customer_name"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[customer_name]"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_name]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[customer_email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="customer_email"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[customer_email]"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_email]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[customer_phone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="customer_phone"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[customer_phone]"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_phone]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[exchange_rate]"
+                      cachedDataType="r8"
+                      cachedName="exchange_rate"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[exchange_rate]"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[exchange_rate]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[amount_GBP]"
+                      cachedDataType="r8"
+                      cachedName="amount_GBP"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[amount_GBP]"
+                      lineageId="Package\CustomerTransactions\Create Amount GBP.Outputs[Derived Column Output].Columns[amount_GBP]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[supplier_contact_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="supplier_contact_name"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[supplier_contact_name]"
+                      lineageId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output].Columns[supplier_contact_name]" />
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].Columns[supplier_phone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="supplier_phone"
+                      externalMetadataColumnId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[supplier_phone]"
+                      lineageId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output].Columns[supplier_phone]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[transaction_id]"
+                      dataType="i4"
+                      name="transaction_id" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[customer_id]"
+                      dataType="i4"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[supplier_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="supplier_name" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[transaction_date]"
+                      dataType="dbDate"
+                      name="transaction_date" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[amount]"
+                      dataType="numeric"
+                      name="amount"
+                      precision="10"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[currency]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="currency" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[customer_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="customer_name" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[customer_email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="customer_email" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[customer_phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="customer_phone" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[exchange_rate]"
+                      dataType="r8"
+                      name="exchange_rate" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[amount_GBP]"
+                      dataType="r8"
+                      name="amount_GBP" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[supplier_contact_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="supplier_contact_name" />
+                    <externalMetadataColumn
+                      refId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[supplier_phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="supplier_phone" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\CustomerTransactions\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[exchange_rates]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[exchange_rates]) [refTable]
+where [refTable].[from_currency] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="from_currency" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="to_currency" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="exchange_rate" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="effective_date" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[currency]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CustomerTransactions\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="{D25190B6-5999-4473-B175-4B60E33D456E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[financial_data_warehouse]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CustomerTransactions\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Lookup.Inputs[Lookup Input].Columns[currency]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="currency"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[currency]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">from_currency</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CustomerTransactions\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\CustomerTransactions\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Lookup.Outputs[Lookup Match Output].Columns[exchange_rate]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\CustomerTransactions\Lookup.Outputs[Lookup Match Output].Columns[exchange_rate]"
+                      name="exchange_rate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">exchange_rate</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CustomerTransactions\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\CustomerTransactions\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CustomerTransactions\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\CustomerTransactions\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CustomerTransactions\LookUp Supplier"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="LookUp Supplier"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[suppliers]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[suppliers]) [refTable]
+where [refTable].[supplier_name] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="supplier_id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="supplier_name" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="contact_name" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="phone" dataType="DT_STR" length="25" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[supplier_name]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CustomerTransactions\LookUp Supplier.Connections[OleDbConnection]"
+                  connectionManagerID="{D25190B6-5999-4473-B175-4B60E33D456E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[financial_data_warehouse]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CustomerTransactions\LookUp Supplier.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\LookUp Supplier.Inputs[Lookup Input].Columns[supplier_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="supplier_name"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[supplier_name]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">supplier_name</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\CustomerTransactions\LookUp Supplier.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output].Columns[supplier_contact_name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="100"
+                      lineageId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output].Columns[supplier_contact_name]"
+                      name="supplier_contact_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">contact_name</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output].Columns[supplier_phone]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="25"
+                      lineageId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output].Columns[supplier_phone]"
+                      name="supplier_phone"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">phone</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\CustomerTransactions\LookUp Supplier.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\CustomerTransactions\LookUp Supplier.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CustomerTransactions\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\CustomerTransactions\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CustomerTransactions\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\CustomerTransactions\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CustomerTransactions\Multicast.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\CustomerTransactions\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CustomerTransactions\Multicast.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\CustomerTransactions\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CustomerTransactions\No Excange Rate"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="No Excange Rate"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CustomerTransactions\No Excange Rate.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CustomerTransactions\No Excange Rate.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\CustomerTransactions\No Excange Rate.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CustomerTransactions\No Excange Rate.Outputs[Derived Column Output].Columns[exchange_rate]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\CustomerTransactions\No Excange Rate.Outputs[Derived Column Output].Columns[exchange_rate]"
+                      name="exchange_rate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_R8)1</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_R8)1</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CustomerTransactions\No Excange Rate.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\CustomerTransactions\No Excange Rate.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CustomerTransactions\No Excange Rate.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\No Excange Rate.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\No Excange Rate.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\No Excange Rate.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -650,13 +1651,445 @@ ON t.customer_id = c.customer_id</property>
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\CustomerTransactions\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1].Columns[transaction_id]"
+                      cachedDataType="i4"
+                      cachedName="transaction_id"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[transaction_id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1].Columns[customer_id]"
+                      cachedDataType="i4"
+                      cachedName="customer_id"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1].Columns[supplier_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="supplier_name"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[supplier_name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[supplier_name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1].Columns[transaction_date]"
+                      cachedDataType="dbDate"
+                      cachedName="transaction_date"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[transaction_date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_date]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1].Columns[amount]"
+                      cachedDataType="numeric"
+                      cachedName="amount"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1].Columns[currency]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="currency"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[currency]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[currency]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1].Columns[customer_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="customer_name"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1].Columns[customer_email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="customer_email"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_email]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_email]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1].Columns[customer_phone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="customer_phone"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_phone]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_phone]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1].Columns[exchange_rate]"
+                      cachedDataType="r8"
+                      cachedName="exchange_rate"
+                      lineageId="Package\CustomerTransactions\Lookup.Outputs[Lookup Match Output].Columns[exchange_rate]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[exchange_rate]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2].Columns[transaction_id]"
+                      cachedDataType="i4"
+                      cachedName="transaction_id"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[transaction_id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2].Columns[customer_id]"
+                      cachedDataType="i4"
+                      cachedName="customer_id"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2].Columns[supplier_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="supplier_name"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[supplier_name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[supplier_name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2].Columns[transaction_date]"
+                      cachedDataType="dbDate"
+                      cachedName="transaction_date"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[transaction_date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_date]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2].Columns[amount]"
+                      cachedDataType="numeric"
+                      cachedName="amount"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[amount]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[amount]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2].Columns[currency]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="currency"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[currency]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[currency]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2].Columns[customer_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="customer_name"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2].Columns[customer_email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="customer_email"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_email]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_email]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2].Columns[customer_phone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="customer_phone"
+                      lineageId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output].Columns[customer_phone]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_phone]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2].Columns[exchange_rate]"
+                      cachedDataType="r8"
+                      cachedName="exchange_rate"
+                      lineageId="Package\CustomerTransactions\No Excange Rate.Outputs[Derived Column Output].Columns[exchange_rate]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[exchange_rate]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\CustomerTransactions\Union All.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_id]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_id]"
+                      name="transaction_id" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_id]"
+                      dataType="i4"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_id]"
+                      name="customer_id" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[supplier_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[supplier_name]"
+                      name="supplier_name" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_date]"
+                      dataType="dbDate"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[transaction_date]"
+                      name="transaction_date" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[amount]"
+                      dataType="numeric"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[amount]"
+                      name="amount"
+                      precision="10"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[currency]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[currency]"
+                      name="currency" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_name]"
+                      name="customer_name" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_email]"
+                      name="customer_email" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[customer_phone]"
+                      name="customer_phone" />
+                    <outputColumn
+                      refId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[exchange_rate]"
+                      dataType="r8"
+                      lineageId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1].Columns[exchange_rate]"
+                      name="exchange_rate" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
-              refId="Package\CustomerTransactions.Paths[OLE DB Source Output]"
+              refId="Package\CustomerTransactions.Paths[Derived Column Output]"
+              endId="Package\CustomerTransactions\Union All.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\CustomerTransactions\No Excange Rate.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\CustomerTransactions.Paths[Derived Column Output1]"
+              endId="Package\CustomerTransactions\LookUp Supplier.Inputs[Lookup Input]"
+              name="Derived Column Output"
+              startId="Package\CustomerTransactions\Create Amount GBP.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\CustomerTransactions.Paths[Lookup Match Output]"
+              endId="Package\CustomerTransactions\Union All.Inputs[Union All Input 1]"
+              name="Lookup Match Output"
+              startId="Package\CustomerTransactions\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\CustomerTransactions.Paths[Lookup Match Output1]"
+              endId="Package\CustomerTransactions\Multicast.Inputs[Multicast Input 1]"
+              name="Lookup Match Output"
+              startId="Package\CustomerTransactions\LookUp Supplier.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\CustomerTransactions.Paths[Lookup No Match Output]"
+              endId="Package\CustomerTransactions\No Excange Rate.Inputs[Derived Column Input]"
+              name="Lookup No Match Output"
+              startId="Package\CustomerTransactions\Lookup.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\CustomerTransactions.Paths[Multicast Output 1]"
               endId="Package\CustomerTransactions\Destination finantial transaction.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 1"
+              startId="Package\CustomerTransactions\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\CustomerTransactions.Paths[Multicast Output 2]"
+              endId="Package\CustomerTransactions\Conditional Split.Inputs[Conditional Split Input]"
+              name="Multicast Output 2"
+              startId="Package\CustomerTransactions\Multicast.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\CustomerTransactions.Paths[NullSupplier]"
+              endId="Package\CustomerTransactions\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="NullSupplier"
+              startId="Package\CustomerTransactions\Conditional Split.Outputs[NullSupplier]" />
+            <path
+              refId="Package\CustomerTransactions.Paths[OLE DB Source Output]"
+              endId="Package\CustomerTransactions\Lookup.Inputs[Lookup Input]"
               name="OLE DB Source Output"
               startId="Package\CustomerTransactions\sours financial_transactions.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\CustomerTransactions.Paths[Union All Output 1]"
+              endId="Package\CustomerTransactions\Create Amount GBP.Inputs[Derived Column Input]"
+              name="Union All Output 1"
+              startId="Package\CustomerTransactions\Union All.Outputs[Union All Output 1]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1583,7 +3016,7 @@ ON t.customer_id = c.customer_id</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate Excgange Rate"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1600,7 +3033,7 @@ ON t.customer_id = c.customer_id</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate Supplier"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1630,7 +3063,7 @@ ON t.customer_id = c.customer_id</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{60B438A3-1B7B-42CC-AE81-404CCAC8FB92}"
+      DTS:DTSID="{9C21DBBC-6A99-4BAC-92F8-02FE43644D64}"
       DTS:From="Package\Truncate Warehouse Finantial Transactions"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -1683,37 +3116,11 @@ ON t.customer_id = c.customer_id</property>
         <NodeLayout
           Size="183.2,41.6"
           Id="Package\CustomerTransactions"
-          TopLeft="280.833317989277,378.733330699669" />
+          TopLeft="276.666651550267,440.266663605107" />
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\exchange rates"
           TopLeft="117.499993580083,149.933332290715" />
-        <NodeLayout
-          Size="280,41.6"
-          Id="Package\Truncate Warehouse Finantial Transactions"
-          TopLeft="230.833320721156,286.866664671832" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="371.633319355217,328.466664671832">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50.266666027837"
-              Start="0,0"
-              End="0,42.766666027837">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.766666027837" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="121.6,41.6"
           Id="Package\Suppliers"
@@ -1726,6 +3133,32 @@ ON t.customer_id = c.customer_id</property>
           Size="160.8,41.6"
           Id="Package\Truncate Supplier"
           TopLeft="386.666645540132,19.0666665340794" />
+        <NodeLayout
+          Size="280,41.6"
+          Id="Package\Truncate Warehouse Finantial Transactions"
+          TopLeft="230.833320721156,286.866664671832" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="369.549986135711,328.466664671832">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,111.799998933275"
+              Start="0,0"
+              End="0,104.299998933275">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,104.299998933275" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="149.733330419329,64.9999998372794">
@@ -1869,42 +3302,424 @@ ON t.customer_id = c.customer_id</property>
     design-time-name="Package\CustomerTransactions">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="172.8,41.6"
+          Id="Package\CustomerTransactions\Create Amount GBP"
+          TopLeft="277.499984838069,426.999997125268" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\CustomerTransactions\Lookup"
+          TopLeft="259.166652506425,173.333332127995" />
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\CustomerTransactions\Multicast"
+          TopLeft="309.999983062347,638.266664147509" />
         <NodeLayout
           Size="206.4,41.6"
           Id="Package\CustomerTransactions\sours financial_transactions"
           TopLeft="209.999996870756,57.9999991357327" />
         <NodeLayout
+          Size="160,41.6"
+          Id="Package\CustomerTransactions\No Excange Rate"
+          TopLeft="432.499976369243,248.733331603673" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\CustomerTransactions\Union All"
+          TopLeft="293.333317306307,357.06666418367" />
+        <NodeLayout
           Size="223.2,41.6"
           Id="Package\CustomerTransactions\Destination finantial transaction"
-          TopLeft="202.999996975064,159.999997615814" />
+          TopLeft="247.499994225799,856.066658194396" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\CustomerTransactions\LookUp Supplier"
+          TopLeft="301.666650184327,522.466664852632" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\CustomerTransactions\Conditional Split"
+          TopLeft="489.999973227581,728.333331639833" />
         <EdgeLayout
-          Id="Package\CustomerTransactions.Paths[OLE DB Source Output]"
-          TopLeft="313.89999692291,99.5999991357327">
+          Id="Package\CustomerTransactions.Paths[Union All Output 1]"
+          TopLeft="353.333317306307,398.66666418367">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.3999984800816"
+              EndConnector="10.5666675317619,28.3333329415983"
               Start="0,0"
-              End="0,52.8999984800816">
+              End="10.5666675317619,20.8333329415983">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.8999984800816" />
+                    End="0,10.1666664707991" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.1666664707991"
+                    Point2="0,14.1666664707991"
+                    Point3="4,14.1666664707991" />
+                  <mssgle:LineSegment
+                    End="6.56666753176188,14.1666664707991" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.56666753176188,14.1666664707991"
+                    Point2="10.5666675317619,14.1666664707991"
+                    Point3="10.5666675317619,18.1666664707991" />
+                  <mssgle:LineSegment
+                    End="10.5666675317619,20.8333329415983" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CustomerTransactions.Paths[OLE DB Source Output]"
+          TopLeft="314.38332468859,99.5999991357327">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73.7333329922623"
+              Start="0,0"
+              End="0,66.2333329922623">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.2333329922623" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CustomerTransactions.Paths[Multicast Output 2]"
+          TopLeft="388.13331639568,679.866664147509">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="178.666656831901,48.4666674923239"
+              Start="0,0"
+              End="178.666656831901,40.9666674923239">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.771832566405" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.771832566405"
+                    Point2="0,19.771832566405"
+                    Point3="4,19.771832566405" />
+                  <mssgle:LineSegment
+                    End="174.666656831901,19.771832566405" />
+                  <mssgle:CubicBezierSegment
+                    Point1="174.666656831901,19.771832566405"
+                    Point2="178.666656831901,19.771832566405"
+                    Point3="178.666656831901,23.771832566405" />
+                  <mssgle:LineSegment
+                    End="178.666656831901,40.9666674923239" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="81.3333284159503,24.771832566405,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CustomerTransactions.Paths[Multicast Output 1]"
+          TopLeft="351.066649729014,679.866664147509">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.03334449678488,176.199994046887"
+              Start="0,0"
+              End="8.03334449678488,168.699994046887">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.8802624721074" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,67.8802624721074"
+                    Point2="0,71.8802624721074"
+                    Point3="4,71.8802624721074" />
+                  <mssgle:LineSegment
+                    End="4.03334449678488,71.8802624721074" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.03334449678488,71.8802624721074"
+                    Point2="8.03334449678488,71.8802624721074"
+                    Point3="8.03334449678488,75.8802624721074" />
+                  <mssgle:LineSegment
+                    End="8.03334449678488,168.699994046887" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CustomerTransactions.Paths[Lookup No Match Output]"
+          TopLeft="315.566652506425,214.933332127995">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="196.933323862818,33.7999994756777"
+              Start="0,0"
+              End="196.933323862818,26.2999994756777">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.8999997378389" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.8999997378389"
+                    Point2="0,16.8999997378389"
+                    Point3="4,16.8999997378389" />
+                  <mssgle:LineSegment
+                    End="192.933323862818,16.8999997378389" />
+                  <mssgle:CubicBezierSegment
+                    Point1="192.933323862818,16.8999997378389"
+                    Point2="196.933323862818,16.8999997378389"
+                    Point3="196.933323862818,20.8999997378389" />
+                  <mssgle:LineSegment
+                    End="196.933323862818,26.2999994756777" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="42.6602752126589,21.8999997378389,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CustomerTransactions.Paths[Lookup Match Output1]"
+          TopLeft="379.266650184327,564.066664852632">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.66666712197997,74.199999294877"
+              Start="0,0"
+              End="-9.66666712197997,66.699999294877">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.0999996474385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.0999996474385"
+                    Point2="0,37.0999996474385"
+                    Point3="-4,37.0999996474385" />
+                  <mssgle:LineSegment
+                    End="-5.66666712197997,37.0999996474385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.66666712197997,37.0999996474385"
+                    Point2="-9.66666712197997,37.0999996474385"
+                    Point3="-9.66666712197997,41.0999996474385" />
+                  <mssgle:LineSegment
+                    End="-9.66666712197997,66.699999294877" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-61.89337262349,42.0999996474385,114.120078125,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CustomerTransactions.Paths[Lookup Match Output]"
+          TopLeft="298.099985839758,214.933332127995">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55.2333314665491,142.133332055675"
+              Start="0,0"
+              End="55.2333314665491,134.633332055675">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.0460600842756" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,54.0460600842756"
+                    Point2="0,58.0460600842756"
+                    Point3="4,58.0460600842756" />
+                  <mssgle:LineSegment
+                    End="51.2333314665491,58.0460600842756" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.2333314665491,58.0460600842756"
+                    Point2="55.2333314665491,58.0460600842756"
+                    Point3="55.2333314665491,62.0460600842756" />
+                  <mssgle:LineSegment
+                    End="55.2333314665491,134.633332055675" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-20.5747209854755,63.0460600842756,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CustomerTransactions.Paths[Derived Column Output1]"
+          TopLeft="363.899984838069,468.599997125268">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="15.3666653462584,53.8666677273644"
+              Start="0,0"
+              End="15.3666653462584,46.3666677273644">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.9333338636822" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.9333338636822"
+                    Point2="0,26.9333338636822"
+                    Point3="4,26.9333338636822" />
+                  <mssgle:LineSegment
+                    End="11.3666653462584,26.9333338636822" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.3666653462584,26.9333338636822"
+                    Point2="15.3666653462584,26.9333338636822"
+                    Point3="15.3666653462584,30.9333338636822" />
+                  <mssgle:LineSegment
+                    End="15.3666653462584,46.3666677273644" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CustomerTransactions.Paths[Derived Column Output]"
+          TopLeft="512.499976369243,290.333331603673">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-140.499992396269,66.733332579997"
+              Start="0,0"
+              End="-140.499992396269,59.233332579997">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5131574486824" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.5131574486824"
+                    Point2="0,39.5131574486824"
+                    Point3="-4,39.5131574486824" />
+                  <mssgle:LineSegment
+                    End="-136.499992396269,39.5131574486824" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-136.499992396269,39.5131574486824"
+                    Point2="-140.499992396269,39.5131574486824"
+                    Point3="-140.499992396269,43.5131574486824" />
+                  <mssgle:LineSegment
+                    End="-140.499992396269,59.233332579997" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\CustomerTransactions\Flat File Destination"
+          TopLeft="598.333300641843,827.733330103027" />
+        <EdgeLayout
+          Id="Package\CustomerTransactions.Paths[NullSupplier]"
+          TopLeft="566.799973227581,769.933331639833">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="116.733327414262,57.7999984631937"
+              Start="0,0"
+              End="116.733327414262,50.2999984631937">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.8999992315968" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.8999992315968"
+                    Point2="0,28.8999992315968"
+                    Point3="4,28.8999992315968" />
+                  <mssgle:LineSegment
+                    End="112.733327414262,28.8999992315968" />
+                  <mssgle:CubicBezierSegment
+                    Point1="112.733327414262,28.8999992315968"
+                    Point2="116.733327414262,28.8999992315968"
+                    Point3="116.733327414262,32.8999992315968" />
+                  <mssgle:LineSegment
+                    End="116.733327414262,50.2999984631937" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="31.5179723008809,33.8999992315968,53.6973828125,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CustomerTransactions\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[exchange_rates]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CustomerTransactions\sours financial_transactions">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\CustomerTransactions\Destination finantial transaction">
     <Properties>
@@ -1919,15 +3734,25 @@ ON t.customer_id = c.customer_id</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\CustomerTransactions\sours financial_transactions">
+    design-time-name="Package\CustomerTransactions\LookUp Supplier">
     <Properties>
       <Property>
-        <Name>DataSourceViewID</Name>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[suppliers]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q2:string">Table</Value>
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -2028,11 +3853,7 @@ ON t.customer_id = c.customer_id</property>
     design-time-name="Package\Suppliers">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\Suppliers\Source suppliers"
-          TopLeft="207.4999886627,68.466666190558" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="234.4,41.6"
           Id="Package\Suppliers\Destination -Warehouse suppliers"
@@ -2041,28 +3862,10 @@ ON t.customer_id = c.customer_id</property>
           Size="156,41.6"
           Id="Package\Suppliers\Data Conversion"
           TopLeft="205.833322087096,194.133331983354" />
-        <EdgeLayout
-          Id="Package\Suppliers.Paths[Flat File Source Output]"
-          TopLeft="284.666655374898,110.066666190558">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,84.0666657927964"
-              Start="0,0"
-              End="0,76.5666657927964">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,76.5666657927964" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Suppliers\Source suppliers"
+          TopLeft="207.4999886627,68.466666190558" />
         <EdgeLayout
           Id="Package\Suppliers.Paths[Data Conversion Output]"
           TopLeft="283.833322087096,235.733331983354">
@@ -2094,7 +3897,33 @@ ON t.customer_id = c.customer_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Suppliers.Paths[Flat File Source Output]"
+          TopLeft="284.666655374898,110.066666190558">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,84.0666657927964"
+              Start="0,0"
+              End="0,76.5666657927964">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.5666657927964" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
